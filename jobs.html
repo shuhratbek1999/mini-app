@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobs</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="container_job">
+      <div class="jobs_hero">
+        <img src="./images/hero.png" alt="hero img" id="backBtn" />
+        <h1 class="jobs_title">Mapwork</h1>
+        <div id="infoBtn" class="job_info">
+          <h2>
+            Post a job <br />
+            for free
+          </h2>
+        </div>
+      </div>
+      <div class="jobs_main container">
+        <div class="find">
+          <div class="input">
+            <input type="text" id="searchInput" placeholder="Find a job" />
+            <div class="icon clear">✕</div>
+            <div class="icon search">
+              <img src="./images/search.png" alt="search" />
+            </div>
+          </div>
+
+          <h3 class="find_title">Choose preferences</h3>
+          <div class="filters">
+            <div class="filter_item">
+              <span>Location</span>
+              <img src="./images/updown.png" alt="updown icon" />
+            </div>
+            <div class="filter_item">
+              <span>Category</span>
+              <img src="./images/updown.png" alt="updown icon" />
+            </div>
+            <div class="filter_item">
+              <span>Salary</span>
+              <img src="./images/updown.png" alt="updown icon" />
+            </div>
+            <div class="filter_item">
+              <span>Benefits</span>
+              <img src="./images/updown.png" alt="updown icon" />
+            </div>
+            <div class="filter_item">
+              <span>Employment</span>
+              <img src="./images/updown.png" alt="updown icon" />
+            </div>
+            <div class="filter_item">
+              <span>Schedule</span>
+              <img src="./images/updown.png" alt="updown icon" />
+            </div>
+            <div class="filter_item">
+              <span>Experience</span>
+              <img src="./images/updown.png" alt="updown icon" />
+            </div>
+          </div>
+        </div>
+        <div class="filter_value">
+          <div class="filter_keys">
+            <div class="keys_item">
+              <span>Barista</span>
+              <img src="./images/filterClose.png" alt="filterClose icon" />
+            </div>
+            <div class="keys_item">
+              <span>London</span>
+              <img src="./images/filterClose.png" alt="filterClose icon" />
+            </div>
+            <div class="keys_item">
+              <span>Full-time</span>
+              <img src="./images/filterClose.png" alt="filterClose icon" />
+            </div>
+            <div class="keys_item">
+              <span>No experience required</span>
+              <img src="./images/filterClose.png" alt="filterClose icon" />
+            </div>
+            <div class="keys_item">
+              <span>Hourly</span>
+              <img src="./images/filterClose.png" alt="filterClose icon" />
+            </div>
+          </div>
+          <div class="filter_result_total">
+            <div class="close_total">
+              <img src="./images/filterResultCloe.png" alt="" />
+            </div>
+            <span class="result_title">Clear Filters (5)</span>
+          </div>
+        </div>
+        <div class="filters_list">
+          <div class="list_item">
+            <div class="list_top">
+              <div class="title">
+                <h2>Barista</h2>
+                <span>Chestnut Coffee</span>
+              </div>
+
+              <button class="toggle-btn">
+                <span class="plus">+</span>
+                <span class="minus">−</span>
+              </button>
+            </div>
+            <div class="list_footer">
+              <p>Full-time work</p>
+              <span>£13.25 Hourly</span>
+            </div>
+            <!-- COLLAPSE CONTENT -->
+            <div class="collapse">
+              <h3 class="respon_title">Responsibilities</h3>
+              <ul class="responsibiliti_list">
+                <li class="collapse_item">
+                  Prepare coffee according to specialty coffee standards
+                  (espresso, cappuccino, latte, and alternative brewing methods)
+                </li>
+                <li class="collapse_item">
+                  Operate and maintain coffee equipment
+                </li>
+                <li class="collapse_item">
+                  Advise guests on the menu and coffee drinks
+                </li>
+                <li class="collapse_item">
+                  Keep the workspace and guest areas clean and organized
+                </li>
+              </ul>
+              <h3>We expect from the candidate:</h3>
+              <ul class="candidate_list">
+                <li class="candidate_item">
+                  Barista experience is a plus but not required
+                </li>
+                <li class="candidate_item">
+                  Ability to work in a team and attention to detail
+                </li>
+                <li class="candidate_item">
+                  Friendly and communicative attitude
+                </li>
+                <li class="candidate_item">
+                  Willingness to learn and grow in the coffee field
+                </li>
+              </ul>
+              <h3 class="offer_title">What we offer</h3>
+              <ul class="offer_list">
+                <li class="offer_item">
+                  Training in specialty coffee standards
+                </li>
+                <li class="offer_item">Friendly and supportive team</li>
+                <li class="offer_item">
+                  Flexible working schedule (part-time or full-time)
+                </li>
+                <li class="offer_item">Opportunities for career growth</li>
+                <li class="offer_item">
+                  Bonuses and discounts on coffee products
+                </li>
+              </ul>
+
+              <button id="Apply" class="apply-btn">Apply</button>
+            </div>
+          </div>
+          <div class="list_item">
+            <div class="list_top">
+              <div class="title">
+                <h2>Barista</h2>
+                <span>Chestnut Coffee</span>
+              </div>
+
+              <button class="toggle-btn">
+                <span class="plus">+</span>
+                <span class="minus">−</span>
+              </button>
+            </div>
+            <div class="list_footer">
+              <p>Full-time work</p>
+              <span>£13.25 Hourly</span>
+            </div>
+            <!-- COLLAPSE CONTENT -->
+            <div class="collapse">
+              <h3 class="respon_title">Responsibilities</h3>
+              <ul class="responsibiliti_list">
+                <li class="collapse_item">
+                  Prepare coffee according to specialty coffee standards
+                  (espresso, cappuccino, latte, and alternative brewing methods)
+                </li>
+                <li class="collapse_item">
+                  Operate and maintain coffee equipment
+                </li>
+                <li class="collapse_item">
+                  Advise guests on the menu and coffee drinks
+                </li>
+                <li class="collapse_item">
+                  Keep the workspace and guest areas clean and organized
+                </li>
+              </ul>
+              <h3>We expect from the candidate:</h3>
+              <ul class="candidate_list">
+                <li class="candidate_item">
+                  Barista experience is a plus but not required
+                </li>
+                <li class="candidate_item">
+                  Ability to work in a team and attention to detail
+                </li>
+                <li class="candidate_item">
+                  Friendly and communicative attitude
+                </li>
+                <li class="candidate_item">
+                  Willingness to learn and grow in the coffee field
+                </li>
+              </ul>
+              <h3 class="offer_title">What we offer</h3>
+              <ul class="offer_list">
+                <li class="offer_item">
+                  Training in specialty coffee standards
+                </li>
+                <li class="offer_item">Friendly and supportive team</li>
+                <li class="offer_item">
+                  Flexible working schedule (part-time or full-time)
+                </li>
+                <li class="offer_item">Opportunities for career growth</li>
+                <li class="offer_item">
+                  Bonuses and discounts on coffee products
+                </li>
+              </ul>
+
+              <button class="apply-btn">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- location modal -->
+    <div class="location-modal" id="locationModal">
+      <div class="location-box">
+        <div class="location-header">
+          <h3>Location</h3>
+          <span class="close-modal">✕</span>
+        </div>
+
+        <div class="location-section">
+          <div class="tags">
+            <span class="tag" data-type="city">London</span>
+            <span class="tag" data-type="city">Manchester</span>
+            <span class="tag" data-type="city">Birmingham</span>
+            <span class="tag" data-type="city">Liverpool</span>
+            <span class="tag" data-type="city">Edinburgh</span>
+          </div>
+        </div>
+
+        <div class="location-section">
+          <h4>Borough</h4>
+          <div class="tags">
+            <span class="tag" data-type="borough">Camden</span>
+            <span class="tag" data-type="borough">Greenwich</span>
+            <span class="tag" data-type="borough">Hackney</span>
+            <span class="tag" data-type="borough">Hammersmith and Fulham</span>
+            <span class="tag" data-type="borough">Islington</span>
+            <span class="tag" data-type="borough">Kensington and Chelsea</span>
+            <span class="tag" data-type="borough">Islington</span>
+            <span class="tag" data-type="borough">Lambeth</span>
+            <span class="tag" data-type="borough">Lewisham</span>
+            <span class="tag" data-type="borough">Southwark</span>
+            <span class="tag" data-type="borough">Tower Hamlets</span>
+            <span class="tag" data-type="borough">Westminster</span>
+            <span class="tag" data-type="borough">Brent</span>
+            <span class="tag" data-type="borough">Haringey</span>
+            <span class="tag" data-type="borough">Harrow</span>
+            <span class="tag" data-type="borough">Hillingdon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SALARY MODAL -->
+    <div class="salary-modal" id="salaryModal">
+      <div class="salary-box">
+        <div class="salary-header">
+          <h3>Salary</h3>
+          <span class="close-salary">✕</span>
+        </div>
+
+        <div class="salary-value">
+          <span>min</span>
+          <strong><span id="salaryAmount">10 000</span> £</strong>
+        </div>
+
+        <!-- RANGE -->
+        <div class="range-wrapper">
+          <div class="range-track">
+            <div class="range-fill"></div>
+            <div class="range-thumb"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./components/button.component.js"></script>
+    <script src="./components/input.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

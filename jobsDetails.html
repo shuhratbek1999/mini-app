@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobs details</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/back.png" alt="" id="backBtn" />
+      <h1 class="detail_title">Post your job for free until August 31</h1>
+      <span class="detail_info">Time to complete: 3 minutes</span>
+      <div class="job_main">
+        <ol class="content">
+          <h1>1. Basic information</h1>
+          <li class="question">
+            <p>Required question *</p>
+            <div id="questionForm" class="form">
+              <div id="formTop" class="form_top"></div>
+              <article>Borough *</article>
+              <span class="label_info">
+                Adding the exact area helps candidates quickly understand where
+                the job is located and improves the relevance of search results
+              </span>
+              <div class="borough_btn">
+                <div class="btn">Camden</div>
+                <div class="btn">Greenwich</div>
+                <div class="btn">Hackney</div>
+                <div class="btn">Hammersmith and Fulham</div>
+                <div class="btn">Islington</div>
+                <div class="btn">Kensington and Chelsea</div>
+                <div class="btn">Lambeth</div>
+                <div class="btn">Lewisham</div>
+                <div class="btn">Southwark</div>
+                <div class="btn">Tower Hamlets</div>
+              </div>
+              <div class="application_nedd">
+                <h1>Do applicants need prior experience?</h1>
+                <div class="buttons">
+                  <div class="yes">Yes</div>
+                  <div class="no">No</div>
+                </div>
+              </div>
+              <div id="indicate" class="indicate"></div>
+              <div class="space_role">
+                <h1 class="role_title">
+                  Specify the compensation for this role  *
+                </h1>
+                <span class="role_text"
+                  >Provide the salary or rate, or select ‘Unpaid’ if the role
+                  <br />
+                  is voluntary</span
+                >
+                <div class="borough_btn">
+                  <div class="btn">Hourly</div>
+                  <div class="btn">Monthly</div>
+                  <div class="btn">Project-based</div>
+                  <div class="btn">Unpaid</div>
+                </div>
+              </div>
+              <div class="payment_method">
+                <h1 class="role_title">Choose the payment options  *</h1>
+                <div class="borough_btn">
+                  <div class="btn">Holiday pay</div>
+                  <div class="btn">Referral bonus</div>
+                  <div class="btn">Paid vacation</div>
+                  <div class="btn">Bonus system</div>
+                  <div class="btn">Paid overtime</div>
+                  <div class="btn">Employee discounts</div>
+                </div>
+              </div>
+              <div id="salary" class="salary"></div>
+              <div class="schedule">
+                <h1 class="schedule_title">Work schedule *</h1>
+                <div class="borough_btn">
+                  <div class="btn">Shift-based</div>
+                  <div class="btn">Flexible</div>
+                  <div class="btn">Fixed</div>
+                </div>
+              </div>
+              <div class="schedule employment_type">
+                <h1 class="schedule_title">Employment type *</h1>
+                <div class="borough_btn">
+                  <div class="btn">Full-time</div>
+                  <div class="btn">Part-time</div>
+                  <div class="btn">Freelance</div>
+                  <div class="btn">Project-based contract</div>
+                </div>
+              </div>
+              <div class="benefits">
+                <h1 class="role_title">Benefits *</h1>
+                <span class="role_text"
+                  >The benefits make your application more attractive</span
+                >
+                <div class="borough_btn">
+                  <div class="btn">Flexible schedule</div>
+                  <div class="btn">Paid training</div>
+                  <div class="btn">Paid training</div>
+                  <div class="btn">Employee discounts</div>
+                  <div class="btn">Travel reimbursement</div>
+                  <div class="btn">Accommodation provided</div>
+                  <div class="btn">Tips included</div>
+                  <div class="btn">Career growth opportunities</div>
+                  <div class="btn">Transport to workplace</div>
+                  <div class="btn">Friendly team</div>
+                  <div class="btn">Safe working environment</div>
+                  <div class="btn">Work equipment provided</div>
+                </div>
+              </div>
+              <div class="health">
+                <h1>Is health insurance provided?</h1>
+                <div class="buttons">
+                  <div class="yes">Yes</div>
+                  <div class="no">No</div>
+                </div>
+              </div>
+              <div class="Weekend">
+                <h1 class="schedule_title">Weekend / evening shifts *</h1>
+                <div class="borough_btn">
+                  <div class="btn">Weekend shifts</div>
+                  <div class="btn">Evening shifts</div>
+                  <div class="btn">Both</div>
+                  <div class="btn">No</div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <h1 class="company_title">2. About the company</h1>
+          <li class="company">
+            <div id="companyInput" class="company_form"></div>
+          </li>
+          <h1>3. Job Details</h1>
+          <li class="job_detal">
+            <div class="job_form">
+              <div class="form_item">
+                <label for="">Responsibilities *</label>
+                <textarea
+                  name=""
+                  placeholder="List key functions and responsibility"
+                ></textarea>
+                <br />
+                <span class="area_info">
+                  Fill in this field with clear, concise daily tasks and core
+                  responsibilities. Focus on what the candidate will be doing
+                  most of the time so applicants can quickly understand the
+                  role.
+                </span>
+              </div>
+              <div class="form_item">
+                <label for="">Expectations from the candidate * </label>
+                <textarea
+                  name=""
+                  placeholder="Experience, key skills and qualities"
+                ></textarea>
+                <br />
+                <span class="area_info">
+                  Describe the skills, experience, and qualities you expect from
+                  the candidate. This helps applicants assess whether they are a
+                  good fit before applying.
+                </span>
+              </div>
+              <div class="form_item">
+                <label for="">What you offer  *</label>
+                <textarea
+                  name=""
+                  placeholder="Describe conditions, benefits, and work atmosphere"
+                ></textarea>
+                <br />
+                <span class="area_info">
+                  List the key benefits, working conditions, and opportunities
+                  your company provides. This section should clearly show why
+                  candidates would want to join your team.
+                </span>
+              </div>
+            </div>
+          </li>
+          <h1 class="company_title">4. Contacts</h1>
+          <li class="Contacts">
+            <div id="contactInput" class="company_form"></div>
+          </li>
+          <div class="checkbox">
+            <div class="checkbox_item">
+              <div class="check_icon">
+                <img src="./images/check.png" class="active" alt="check icon" />
+              </div>
+              <span>Post for 30 days</span>
+            </div>
+            <div class="checkbox_item">
+              <div class="check_icon">
+                <img src="./images/check.png" alt="check icon" />
+              </div>
+              <span>I agree with the terms and data processing</span>
+            </div>
+          </div>
+        </ol>
+        <div id="footerBtn" class="footer_btn"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./components/button.component.js"></script>
+    <script src="./components/input.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
