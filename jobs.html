@@ -106,42 +106,32 @@
         </div>
         <div class="filter_value">
           <div class="filter_keys">
-            <div class="keys_item">
+            <!-- <div class="keys_item">
               <span>Barista</span>
               <img src="./images/filterClose.png" alt="filterClose icon" />
-            </div>
-            <div class="keys_item">
-              <span>London</span>
-              <img src="./images/filterClose.png" alt="filterClose icon" />
-            </div>
-            <div class="keys_item">
-              <span>Full-time</span>
-              <img src="./images/filterClose.png" alt="filterClose icon" />
-            </div>
-            <div class="keys_item">
-              <span>No experience required</span>
-              <img src="./images/filterClose.png" alt="filterClose icon" />
-            </div>
-            <div class="keys_item">
-              <span>Hourly</span>
-              <img src="./images/filterClose.png" alt="filterClose icon" />
-            </div>
+            </div> -->
           </div>
           <div class="filter_result_total">
             <div class="close_total">
               <img src="./images/filterResultCloe.png" alt="updown icon" />
             </div>
-            <span class="result_title">Clear Filters (5)</span>
+            <span class="result_title">Clear Filters (0)</span>
           </div>
         </div>
         <div class="filters_list">
-          <div class="list_item">
+          <div
+            class="list_item"
+            data-title="barista"
+            data-location="London"
+            data-category="coffee"
+            data-employment="full-time"
+            data-salary="85000"
+          >
             <div class="list_top">
               <div class="title">
                 <h2>Barista</h2>
                 <span>Chestnut Coffee</span>
               </div>
-
               <button class="toggle-btn">
                 <span class="plus">+</span>
                 <span class="minus">−</span>
@@ -149,9 +139,8 @@
             </div>
             <div class="list_footer">
               <p>Full-time work</p>
-              <span>£13.25 Hourly</span>
+              <span>£85.00 Hourly</span>
             </div>
-            <!-- COLLAPSE CONTENT -->
             <div class="collapse">
               <h3 class="respon_title">Responsibilities</h3>
               <ul class="responsibiliti_list">
@@ -169,7 +158,7 @@
                   Keep the workspace and guest areas clean and organized
                 </li>
               </ul>
-              <h3>We expect from the candidate:</h3>
+              <h3>We expect from the candidate:</h3>
               <ul class="candidate_list">
                 <li class="candidate_item">
                   Barista experience is a plus but not required
@@ -198,33 +187,36 @@
                   Bonuses and discounts on coffee products
                 </li>
               </ul>
-
               <button id="Apply" class="apply-btn">Apply</button>
             </div>
           </div>
-          <div class="list_item">
+          <div
+            class="list_item"
+            data-title="arxitektor"
+            data-location="manchester"
+            data-category="tea"
+            data-employment="part-time"
+            data-salary="35000"
+          >
             <div class="list_top">
               <div class="title">
-                <h2>Barista</h2>
+                <h2>Arxitector</h2>
                 <span>Chestnut Coffee</span>
               </div>
-
               <button class="toggle-btn">
                 <span class="plus">+</span>
                 <span class="minus">−</span>
               </button>
             </div>
             <div class="list_footer">
-              <p>Full-time work</p>
-              <span>£13.25 Hourly</span>
+              <p>Part-time work</p>
+              <span>£35.00 Hourly</span>
             </div>
-            <!-- COLLAPSE CONTENT -->
             <div class="collapse">
               <h3 class="respon_title">Responsibilities</h3>
               <ul class="responsibiliti_list">
                 <li class="collapse_item">
                   Prepare coffee according to specialty coffee standards
-                  (espresso, cappuccino, latte, and alternative brewing methods)
                 </li>
                 <li class="collapse_item">
                   Operate and maintain coffee equipment
@@ -236,7 +228,7 @@
                   Keep the workspace and guest areas clean and organized
                 </li>
               </ul>
-              <h3>We expect from the candidate:</h3>
+              <h3>We expect from the candidate:</h3>
               <ul class="candidate_list">
                 <li class="candidate_item">
                   Barista experience is a plus but not required
@@ -265,8 +257,7 @@
                   Bonuses and discounts on coffee products
                 </li>
               </ul>
-
-              <button class="apply-btn">Apply</button>
+              <button id="Apply" class="apply-btn">Apply</button>
             </div>
           </div>
         </div>
@@ -314,6 +305,7 @@
         </div>
       </div>
     </div>
+    <div id="categoryBackdrop"></div>
 
     <!-- SALARY MODAL -->
     <div class="salary-modal" id="salaryModal">
@@ -335,6 +327,15 @@
             <div class="range-thumb"></div>
           </div>
         </div>
+      </div>
+    </div>
+    <div id="categoryModal">
+      <h3>Category</h3>
+      <span class="close-category">✕</span>
+      <div class="tags">
+        <span class="tag" data-type="category">Coffee</span>
+        <span class="tag" data-type="category">Tea</span>
+        <span class="tag" data-type="category">Juice</span>
       </div>
     </div>
 
