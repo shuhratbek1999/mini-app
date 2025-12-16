@@ -1012,13 +1012,14 @@ textarea::placeholder {
 .compBtn {
   display: flex;
   /* align-items: center; */
-  gap: 10px;
+  gap: 5px;
 }
 .compBtn button {
   text-decoration: underline;
   font-family: "Oddval";
   height: 48px !important;
   padding: 16px 24px !important;
+  white-space: nowrap;
   /* line-height: 48px !important; */
 }
 
@@ -1100,6 +1101,7 @@ textarea::placeholder {
   color: white;
   text-align: center;
   font-weight: bold;
+  white-space: nowrap;
 }
 .stroke-blue-grey {
   color: #ffffff;
@@ -1168,4 +1170,50 @@ textarea::placeholder {
 
 .organisms .card {
   margin: 30px 0px;
+}
+
+.iconcomponent {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+.iconcomponent.search {
+  right: 0;
+  background-color: #3da88b;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.iconcomponent.icon_grey {
+  background-color: #6b9191 !important;
+}
+.toggle-btns .plus,
+.toggle-btns .minus {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+  color: #3da88b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle-btns .plus {
+  border: 1.59px solid #3fa68c;
+  background: transparent;
+}
+.toggle-btns .minus {
+  background-color: #3da88b;
+  color: white;
+  border: none;
+}
+.select_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0px;
 }

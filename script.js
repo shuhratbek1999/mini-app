@@ -61,8 +61,8 @@ $(document).ready(function () {
   const startGrey = simpleButton("Start", "#3DA88B", "#E8EEEE", "95%");
   const startG = simpleButton("Start", "#FFFFFF", "#6B9191", "95%");
   $("#btnsComponent").append(startGreen, startBlack, startGrey, startG);
-  const startGre = simpleButton("Oddval Semibold", "white", "#3DA88B", "50%");
-  const startgre2 = simpleButton("Inter Medium", "white", "#292727", "50%");
+  const startGre = simpleButton("Oddval Semibold", "white", "#3DA88B", "48%");
+  const startgre2 = simpleButton("Inter Medium", "white", "#292727", "48%");
   $(".compBtn").append(startGre, startgre2);
   // --- Collapse toggle ---
   $(".toggle-btn").on("click", function () {
