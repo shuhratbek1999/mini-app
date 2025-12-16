@@ -269,4 +269,12 @@ $(document).ready(function () {
 
     $("#salaryAmount").text(salary.toLocaleString());
   });
+
+  $(".checkbox_item").click(function () {
+    // Barcha imglardan active classni olib tashlaymiz
+    $(".checkbox_item .check_icon img").removeClass("active");
+
+    // Shu bosilgan item ichidagi img ga active qo'shamiz
+    $(this).find("img").addClass("active");
+  });
 });
