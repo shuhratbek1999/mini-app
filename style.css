@@ -170,15 +170,15 @@
 .container_job {
   max-width: 480px;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0 auto;
   overflow-x: hidden;
   position: relative;
 }
 .jobs_hero {
   background-color: #e8eeee;
-  max-height: 260px;
-  height: 100%;
+  height: 260px;
+  /* height: 100%; */
   position: relative;
 }
 .jobs_hero img {
@@ -605,7 +605,7 @@ textarea::placeholder {
 /* MODAL BOX */
 .location-box {
   position: absolute;
-  bottom: 250px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -682,7 +682,7 @@ textarea::placeholder {
 /* BOTTOM MODAL */
 .salary-box {
   position: absolute;
-  bottom: 400px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
