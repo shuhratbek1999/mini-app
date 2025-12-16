@@ -55,6 +55,15 @@ $(document).ready(function () {
   );
   $("#footerBtn").append(footerBtn);
 
+  // component button
+  const startGreen = simpleButton("Start", "white", "#3DA88B", "95%");
+  const startBlack = simpleButton("Start", "white", "#292727", "95%");
+  const startGrey = simpleButton("Start", "#3DA88B", "#E8EEEE", "95%");
+  const startG = simpleButton("Start", "#FFFFFF", "#6B9191", "95%");
+  $("#btnsComponent").append(startGreen, startBlack, startGrey, startG);
+  const startGre = simpleButton("Oddval Semibold", "white", "#3DA88B", "50%");
+  const startgre2 = simpleButton("Inter Medium", "white", "#292727", "50%");
+  $(".compBtn").append(startGre, startgre2);
   // --- Collapse toggle ---
   $(".toggle-btn").on("click", function () {
     const parent = $(this).closest(".list_item");
@@ -75,6 +84,21 @@ $(document).ready(function () {
   $(".icon.clear").on("click", function () {
     const $input = $(this).siblings("#searchInput");
     $input.val("").focus();
+    $(this).hide();
+    filterJobs();
+  });
+
+  // component uchun
+  const $inputs = $("#searchInputComp");
+  $inputs.on("input", function () {
+    $(this)
+      .siblings(".icon.clear")
+      .toggle($(this).val().length > 0);
+    filterJobs();
+  });
+  $(".icon.clear").on("click", function () {
+    const $inputs = $(this).siblings("#searchInputComp");
+    $inputs.val("").focus();
     $(this).hide();
     filterJobs();
   });
@@ -303,4 +327,69 @@ $(document).ready(function () {
     if ($(".filters_list .list_item:visible").length === 0)
       console.log("No jobs found");
   }
+  $("#formTop").baseInput({
+    label: "Who are you looking for? ",
+    placeholder: "Specify the position and level",
+    name: "company",
+    required: true,
+  });
+  $("#formTopComp").baseInput({
+    label: "Who are you looking for? ",
+    placeholder: "Specify the position and level",
+    name: "company",
+    required: true,
+  });
+  $("#formTop").baseInput({
+    label: "City",
+    placeholder: "Specify the job location",
+    name: "company",
+    required: true,
+  });
+  $("#indicate").baseInput({
+    label: "Indicate the required experience",
+    placeholder: "Example: 1-2 years",
+    name: "company",
+    required: true,
+  });
+  $("#salary").baseInput({
+    label: "Salary, £",
+    placeholder: "Specify the offered salary",
+    name: "company",
+    required: true,
+  });
+  $("#companyInput").baseInput({
+    label: "Company name",
+    placeholder: "Full or short company name",
+    name: "company",
+    required: true,
+  });
+  $("#companyInput").baseInput({
+    label: "Website link",
+    placeholder: "https:// ",
+    name: "company",
+    required: true,
+  });
+  $("#companyInput").baseInput({
+    label: "Instagram",
+    placeholder: "Specify the account name",
+    name: "company",
+    required: false,
+  });
+  $("#contactInput").baseInput({
+    label: "Contact person",
+    placeholder: "Provide the name of the contact ",
+    name: "company",
+    required: true,
+  });
+  $("#contactInput").baseInput({
+    label: "Method of contact ",
+    placeholder: "Email or website link",
+    name: "company",
+    required: true,
+  });
+
+  $("#companyInputComponent").baseInput({
+    placeholder: "Specify the position and level",
+    name: "company",
+  });
 });

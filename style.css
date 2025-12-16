@@ -18,7 +18,18 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.component_container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  /* position: relative; */
+  padding: 10px;
+  scrollbar-width: 1px;
+}
+.component_container > div {
+  margin: 10px 0px;
+}
 .container {
   max-width: 480px;
   width: 100%;
@@ -267,13 +278,17 @@
   border-radius: 8px;
   border: none;
 }
-.find input:focus {
-  outline: none;
-}
+/* .find input:focus {
+  outline: 1px solid #6b9191 !important;
+} */
 input,
 textarea {
   caret-color: #3da88b;
   color: #3da88b !important;
+}
+input:focus,
+textarea:focus {
+  outline: 1px solid #6b9191 !important;
 }
 .icon {
   position: absolute;
@@ -296,6 +311,9 @@ textarea {
   display: none;
   font-size: 18px;
   color: #999;
+  /* border: 1px solid red; */
+  text-align: center;
+  line-height: 48px;
 }
 
 .find .find_title {
@@ -330,7 +348,7 @@ textarea {
   gap: 6px 4px;
   margin: 15px 0px;
 }
-.filter_keys .keys_item {
+.keys_item {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -583,12 +601,17 @@ input::placeholder {
 .job_main .content li {
   margin: 10px 0px;
 }
-.job_main .content > h1 {
+.job_main .content > h1,
+.content li > h1 {
   color: #6b9191;
   font-size: 24px;
   font-weight: 600;
   margin-top: 28px;
   font-family: "Oddval";
+}
+.content li > p {
+  margin-bottom: 10px;
+  margin-top: -5px;
 }
 .content p {
   font-size: 14px;
@@ -914,4 +937,235 @@ textarea::placeholder {
 /* Optional hover */
 #categoryModal .tag:hover {
   background: #f5f5f5;
+}
+
+#btnsComponent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.component_container .select {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.select .filter_keys {
+  flex-direction: column;
+}
+.keys_item.active {
+  border: none;
+  background-color: #e8eeee;
+  color: #6b9191;
+}
+
+.form_elements .filters {
+  margin: 10px;
+}
+
+.typography h2 {
+  font-family: "Oddval";
+  font-weight: 600;
+  font-size: 32px;
+}
+.typography h1 {
+  font-size: 84px;
+  font-family: "Oddval";
+  font-weight: 600;
+  letter-spacing: -6%;
+}
+.typography .h1_info {
+  color: #6b9191;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Inter";
+  margin: 10px 0px;
+  display: inline-block;
+}
+.typography h2 {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Oddval";
+}
+.typography h2 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Oddval";
+}
+.typography h4 {
+  font-size: 18px;
+  font-family: "Inter";
+  font-weight: 500;
+}
+.typography .text {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Inter";
+}
+.typography .btn {
+  font-size: 16px;
+  font-weight: 600;
+  color: #292727;
+  font-family: "Oddval";
+}
+.compBtn {
+  display: flex;
+  /* align-items: center; */
+  gap: 10px;
+}
+.compBtn button {
+  text-decoration: underline;
+  font-family: "Oddval";
+  height: 48px !important;
+  padding: 16px 24px !important;
+  /* line-height: 48px !important; */
+}
+
+.typographys h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.color-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.color-row div {
+  width: 124px;
+}
+.color-box {
+  flex: 1;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Background colors */
+.bg-blue-grey {
+  background-color: #6b9191;
+}
+.bg-bluee-grey {
+  background-color: #6b919180;
+}
+.bg-light-blue {
+  background-color: #e8eeee;
+  color: #6b9191;
+  font-size: 16px;
+  font-family: "Oddval";
+  font-weight: 600;
+}
+.bg-white {
+  background-color: #ffffff;
+  color: #6b9191;
+  font-family: "Oddval";
+  font-weight: 600;
+  font-size: 16px;
+}
+.bg-black {
+  background-color: #292727;
+  font-family: "Oddval";
+  font-weight: 600;
+  font-size: 16px;
+}
+.bg-green {
+  background-color: #3da88b;
+  font-family: "Oddval";
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Stroke colors (example using border) */
+.color-stroke {
+  display: flex;
+  margin-bottom: 10px;
+}
+.color-boxs {
+  flex: 1;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.stroke-blue-grey {
+  color: #ffffff;
+  background-color: #6b9191;
+  font-family: "Oddval";
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.stroke-blue-grey-30 {
+  color: #6b9191;
+  background-color: #6b91914d;
+  font-family: "Oddval";
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.stroke-green {
+  color: #ffff;
+  background-color: #3da88b;
+  font-family: "Oddval";
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Text colors (background optional) */
+.text-blue-grey {
+  /* background-color: #6b9191; */
+  color: #6b9191;
+  font-family: "Oddval";
+  font-size: 16px;
+  font-weight: 600;
+}
+.text-light-blue {
+  color: #3da88b;
+  font-family: "Oddval";
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #e8eeee;
+}
+.text-white {
+  color: #ffff;
+  font-family: "Oddval";
+  font-size: 16px;
+  font-weight: 600;
+}
+.text-black {
+  color: #222222;
+  font-family: "Oddval";
+  font-size: 16px;
+  font-weight: 600;
+}
+.text-blue-grey-50 {
+  color: rgba(110, 140, 140, 0.5);
+  font-family: "Oddval";
+  font-size: 16px;
+  font-weight: 600;
+}
+.text-green {
+  color: #3fa583;
+  font-family: "Oddval";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.organisms .card {
+  margin: 30px 0px;
 }

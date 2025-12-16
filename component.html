@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="component_container">
+      <div class="filters_list">
+        <div
+          class="list_item"
+          data-title="barista"
+          data-location="London"
+          data-category="coffee"
+          data-employment="full-time"
+          data-salary="85000"
+        >
+          <div class="list_top">
+            <div class="title">
+              <h2>Barista</h2>
+              <span>Chestnut Coffee</span>
+            </div>
+            <button class="toggle-btn">
+              <span class="plus">+</span>
+              <span class="minus">−</span>
+            </button>
+          </div>
+          <div class="list_footer">
+            <p>Full-time work</p>
+            <span>£85.00 Hourly</span>
+          </div>
+          <div class="collapse">
+            <h3 class="respon_title">Responsibilities</h3>
+            <ul class="responsibiliti_list">
+              <li class="collapse_item">
+                Prepare coffee according to specialty coffee standards
+                (espresso, cappuccino, latte, and alternative brewing methods)
+              </li>
+              <li class="collapse_item">
+                Operate and maintain coffee equipment
+              </li>
+              <li class="collapse_item">
+                Advise guests on the menu and coffee drinks
+              </li>
+              <li class="collapse_item">
+                Keep the workspace and guest areas clean and organized
+              </li>
+            </ul>
+            <h3>We expect from the candidate:</h3>
+            <ul class="candidate_list">
+              <li class="candidate_item">
+                Barista experience is a plus but not required
+              </li>
+              <li class="candidate_item">
+                Ability to work in a team and attention to detail
+              </li>
+              <li class="candidate_item">
+                Friendly and communicative attitude
+              </li>
+              <li class="candidate_item">
+                Willingness to learn and grow in the coffee field
+              </li>
+            </ul>
+            <h3 class="offer_title">What we offer</h3>
+            <ul class="offer_list">
+              <li class="offer_item">Training in specialty coffee standards</li>
+              <li class="offer_item">Friendly and supportive team</li>
+              <li class="offer_item">
+                Flexible working schedule (part-time or full-time)
+              </li>
+              <li class="offer_item">Opportunities for career growth</li>
+              <li class="offer_item">
+                Bonuses and discounts on coffee products
+              </li>
+            </ul>
+            <button id="Apply" class="apply-btn">Apply</button>
+          </div>
+        </div>
+        <div
+          class="list_item"
+          data-title="arxitektor"
+          data-location="manchester"
+          data-category="tea"
+          data-employment="part-time"
+          data-salary="35000"
+        >
+          <div class="list_top">
+            <div class="title">
+              <h2>Arxitector</h2>
+              <span>Chestnut Coffee</span>
+            </div>
+            <button class="toggle-btn">
+              <span class="plus">+</span>
+              <span class="minus">−</span>
+            </button>
+          </div>
+          <div class="list_footer">
+            <p>Part-time work</p>
+            <span>£35.00 Hourly</span>
+          </div>
+          <div class="collapse">
+            <h3 class="respon_title">Responsibilities</h3>
+            <ul class="responsibiliti_list">
+              <li class="collapse_item">
+                Prepare coffee according to specialty coffee standards
+              </li>
+              <li class="collapse_item">
+                Operate and maintain coffee equipment
+              </li>
+              <li class="collapse_item">
+                Advise guests on the menu and coffee drinks
+              </li>
+              <li class="collapse_item">
+                Keep the workspace and guest areas clean and organized
+              </li>
+            </ul>
+            <h3>We expect from the candidate:</h3>
+            <ul class="candidate_list">
+              <li class="candidate_item">
+                Barista experience is a plus but not required
+              </li>
+              <li class="candidate_item">
+                Ability to work in a team and attention to detail
+              </li>
+              <li class="candidate_item">
+                Friendly and communicative attitude
+              </li>
+              <li class="candidate_item">
+                Willingness to learn and grow in the coffee field
+              </li>
+            </ul>
+            <h3 class="offer_title">What we offer</h3>
+            <ul class="offer_list">
+              <li class="offer_item">Training in specialty coffee standards</li>
+              <li class="offer_item">Friendly and supportive team</li>
+              <li class="offer_item">
+                Flexible working schedule (part-time or full-time)
+              </li>
+              <li class="offer_item">Opportunities for career growth</li>
+              <li class="offer_item">
+                Bonuses and discounts on coffee products
+              </li>
+            </ul>
+            <button id="Apply" class="apply-btn">Apply</button>
+          </div>
+        </div>
+      </div>
+      <div class="find">
+        <div class="input">
+          <input type="text" id="searchInput" placeholder="Find a job" />
+          <div class="icon clear">✕</div>
+          <div class="icon search">
+            <img src="./images/search.png" alt="search" />
+          </div>
+        </div>
+
+        <h3 class="find_title">Choose preferences</h3>
+        <div class="filters">
+          <div class="filter_item">
+            <span>Location</span>
+            <img
+              src="./images/updown.png"
+              class="pastga active"
+              alt="updown icon"
+            />
+            <img src="./images/ops.svg" class="yuqoriga" alt="updown icon" />
+          </div>
+          <div class="filter_item">
+            <span>Category</span>
+            <img
+              src="./images/updown.png"
+              class="pastga active"
+              alt="updown icon"
+            />
+            <img src="./images/ops.svg" class="yuqoriga" alt="updown icon" />
+          </div>
+          <div class="filter_item">
+            <span>Salary</span>
+            <img
+              src="./images/updown.png"
+              class="pastga active"
+              alt="updown icon"
+            />
+            <img src="./images/ops.svg" class="yuqoriga" alt="updown icon" />
+          </div>
+          <div class="filter_item">
+            <span>Benefits</span>
+            <img
+              src="./images/updown.png"
+              class="pastga active"
+              alt="updown icon"
+            />
+            <img src="./images/ops.svg" class="yuqoriga" alt="updown icon" />
+          </div>
+          <div class="filter_item">
+            <span>Employment</span>
+            <img
+              src="./images/updown.png"
+              class="pastga active"
+              alt="updown icon"
+            />
+            <img src="./images/ops.svg" class="yuqoriga" alt="updown icon" />
+          </div>
+          <div class="filter_item">
+            <span>Schedule</span>
+            <img
+              src="./images/updown.png"
+              class="pastga active"
+              alt="updown icon"
+            />
+            <img src="./images/ops.svg" class="yuqoriga" alt="updown icon" />
+          </div>
+          <div class="filter_item">
+            <span>Experience</span>
+            <img
+              src="./images/updown.png"
+              class="pastga active"
+              alt="updown icon"
+            />
+            <img src="./images/ops.svg" class="yuqoriga" alt="updown icon" />
+          </div>
+        </div>
+      </div>
+      <div class="company">
+        <div class="company_form">
+          <div id="companyInputComponent"></div>
+          <div class="form_item">
+            <textarea
+              name=""
+              placeholder="List key functions and responsibility"
+            ></textarea>
+          </div>
+          <div class="checkbox">
+            <div class="checkbox_item">
+              <div class="check_icon">
+                <img src="./images/check.png" class="active" alt="check icon" />
+              </div>
+              <span>Post for 30 days</span>
+            </div>
+            <div class="checkbox_item">
+              <div class="check_icon">
+                <img src="./images/check.png" alt="check icon" />
+              </div>
+              <span>Post for 30 days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="find">
+        <div class="input">
+          <input type="text" id="searchInputComp" placeholder="Find a job" />
+          <div class="icon clear">✕</div>
+          <div class="icon search">
+            <img src="./images/search.png" alt="search" />
+          </div>
+        </div>
+      </div>
+      <div id="btnsComponent" class="btns"></div>
+      <div class="select">
+        <span>select</span>
+        <div class="filter_keys">
+          <div class="keys_item">
+            <span>Food service</span>
+          </div>
+          <div class="keys_item active">
+            <span>Food service</span>
+          </div>
+          <div class="keys_item">
+            <span>London</span>
+            <img src="./images/filterClose.png" alt="filterClose icon" />
+          </div>
+          <div class="keys_item">
+            <span>London</span>
+          </div>
+        </div>
+      </div>
+      <div class="form_elements">
+        <ol class="content">
+          <li class="question">
+            <!-- <h4>Who are you looking for? </h4> -->
+            <h1>1. Basic information</h1>
+            <p>Required question *</p>
+            <div id="questionForm" class="form">
+              <div id="formTopComp" class="form_top"></div>
+              <div class="form_item">
+                <label for="">Who are you looking for?  *</label>
+                <textarea
+                  name=""
+                  placeholder="Specify the position and level"
+                ></textarea>
+                <br />
+                <span class="area_info">
+                  Fill in this field with clear, concise daily tasks and core
+                  responsibilities. Focus on what the candidate will be doing
+                  most of the time so applicants can quickly understand the
+                  role.
+                </span>
+              </div>
+              <div class="application_nedd">
+                <h1>Do applicants need prior experience?</h1>
+                <div class="buttons">
+                  <div class="yes">Yes</div>
+                  <div class="no">No</div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+        <div class="filters">
+          <div class="filter_item">
+            <span>Location</span>
+            <img
+              src="./images/updown.png"
+              class="pastga active"
+              alt="updown icon"
+            />
+            <img src="./images/ops.svg" class="yuqoriga" alt="updown icon" />
+          </div>
+          <div class="filter_item">
+            <span>Location</span>
+            <img src="./images/updown.png" class="pastga" alt="updown icon" />
+            <img
+              src="./images/ops.svg"
+              class="yuqoriga active"
+              alt="updown icon"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="typography">
+        <h2>Typography</h2>
+        <h1>H-1</h1>
+        <span class="h1_info">Oddval/ 84/84/-6/ Semibold</span>
+        <h2>H-2</h2>
+        <span class="h1_info">Oddval/ 36/34/-4/ Semibold</span>
+        <h3>H-3</h3>
+        <span class="h1_info">Oddval/ 24/24/-2/ Semibold</span>
+        <h4>H-4</h4>
+        <span class="h1_info">Inter/ 18/20/-2/ Medium</span>
+        <p class="text">Text-Body</p>
+        <span class="h1_info">Inter/ 14/18/-2/ Medium</span>
+        <p class="btn">Text-Button</p>
+        <span class="h1_info">Inter/ 16/16/-2/ Semibold</span>
+        <div class="compBtn"></div>
+      </div>
+      <div class="typographys">
+        <h1>Typography</h1>
+
+        <div class="section">
+          <h2>BG</h2>
+          <div class="color-row">
+            <div class="color-box bg-blue-grey">Blue-Grey</div>
+            <div class="color-box bg-light-blue">Light-Blue</div>
+            <div class="color-box bg-white">White</div>
+          </div>
+          <div class="color-row">
+            <div class="color-box bg-black">Black</div>
+            <div class="color-box bg-green">Green</div>
+            <div class="color-box"></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Stroke</h2>
+          <div class="color-stroke">
+            <div class="color-boxs stroke-blue-grey">Blue-Grey</div>
+            <div class="color-boxs stroke-blue-grey-30">Blue-Grey 30%</div>
+            <div class="color-boxs stroke-green">Green</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Text</h2>
+          <div class="color-stroke">
+            <div class="color-boxs text-white bg-blue-grey">Blue-Grey</div>
+            <div class="color-boxs text-light-blue bg-white">Light-Blue</div>
+            <div class="color-boxs text-blue-grey bg-white">White</div>
+          </div>
+          <div class="color-stroke">
+            <div class="color-boxs text-white bg-black">Black</div>
+            <div class="color-boxs text-white bg-bluee-grey">Blue-Grey 50%</div>
+            <div class="color-boxs text-white bg-green">Green</div>
+          </div>
+        </div>
+      </div>
+      <div class="organisms">
+        <div class="card">
+          <h3 class="card_title">
+            Which field would you <br />
+            like to work in?
+          </h3>
+          <div class="tubs">
+            <div class="tub">Food service</div>
+            <div class="tub">Manufacturing</div>
+            <div class="tub">Warehouse</div>
+            <div class="tub">Sales</div>
+            <div class="tub">Caregiving</div>
+            <div class="tub">Volunteering</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card_title">
+            Do you have work <br />
+            experience?
+          </h3>
+          <div class="lists_work">
+            <div class="list_item">
+              <h4 class="list_title">Manufacturing</h4>
+              <div class="buttons">
+                <div class="yes active">Yes</div>
+                <div class="no">No</div>
+              </div>
+            </div>
+            <div class="list_item">
+              <h4 class="list_title">Sales</h4>
+              <div class="buttons">
+                <div class="yes">Yes</div>
+                <div class="no active">No</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./components/button.component.js"></script>
+    <script src="./components/input.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
