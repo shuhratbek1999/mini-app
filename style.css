@@ -1041,7 +1041,6 @@ textarea::placeholder {
 
 .color-row {
   display: flex;
-  gap: 10px;
   margin-bottom: 10px;
 }
 .color-row div {
@@ -1052,7 +1051,6 @@ textarea::placeholder {
   padding: 10px;
   color: white;
   text-align: center;
-  border-radius: 4px;
   white-space: nowrap;
   font-weight: bold;
 }
