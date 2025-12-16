@@ -169,12 +169,22 @@ $(document).ready(function () {
 
   // location modal
 
+  function resetAllFilters() {
+    $(".filter_item").each(function () {
+      $(this).find(".pastga").addClass("active");
+      $(this).find(".yuqoriga").removeClass("active");
+    });
+  }
   $(".filter_item")
     .first()
     .on("click", function () {
+      const pastga = $(this).find(".pastga");
+      const yuqoriga = $(this).find(".yuqoriga");
+      pastga.removeClass("active");
+      yuqoriga.addClass("active");
+      resetAllFilters();
       $("#locationModal").show();
     });
-
   // Tag bosilganda
   function updateCounter() {
     const count = $(".keys_item").length;
@@ -205,6 +215,7 @@ $(document).ready(function () {
 
     // modal yopiladi
     $("#locationModal").hide();
+    resetAllFilters();
   });
   $(document).on("click", ".keys_item img", function () {
     $(this).closest(".keys_item").remove();
@@ -216,6 +227,10 @@ $(document).ready(function () {
     $(".keys_item").remove();
     updateCounter();
     $("#locationModal").hide();
+    const firstItem = $(".filter_item").first();
+    firstItem.find(".pastga").addClass("active");
+    firstItem.find(".yuqoriga").removeClass("active");
+    resetAllFilters();
   });
 
   const minSalary = 10000;
@@ -227,12 +242,19 @@ $(document).ready(function () {
   $(".filter_item")
     .eq(2)
     .on("click", function () {
+      const pastga = $(this).find(".pastga");
+      const yuqoriga = $(this).find(".yuqoriga");
+      pastga.removeClass("active");
+      yuqoriga.addClass("active");
       $("#salaryModal").show();
     });
 
   // Yopish
   $(".close-salary").on("click", function () {
     $("#salaryModal").hide();
+    const salaryItem = $(".filter_item").eq(2);
+    salaryItem.find(".pastga").addClass("active");
+    salaryItem.find(".yuqoriga").removeClass("active");
   });
 
   // Drag boshlash

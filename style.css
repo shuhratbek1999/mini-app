@@ -709,6 +709,7 @@ textarea::placeholder {
   color: #6b9191;
   font-size: 24px;
   font-weight: 600;
+  font-family: "Oddval";
 }
 
 .close-modal,
@@ -725,6 +726,15 @@ textarea::placeholder {
   color: #6b9191;
   font-size: 24px;
   font-weight: 600;
+  font-family: "Oddval";
+}
+.pastga,
+.yuqoriga {
+  display: none;
+}
+.pastga.active,
+.yuqoriga.active {
+  display: flex;
 }
 
 /* TAGS */
@@ -738,11 +748,12 @@ textarea::placeholder {
 .tag {
   padding: 8px 12px;
   border: 1px solid #6b9191;
-  border-radius: 20px;
+  border-radius: 58px;
   font-size: 14px;
   color: #6b9191;
   cursor: pointer;
   font-weight: 500;
+  font-family: "Inter";
 }
 
 .tag.active {
@@ -787,6 +798,7 @@ textarea::placeholder {
   color: #6b9191;
   font-size: 24px;
   font-weight: 600;
+  font-family: "Oddval";
 }
 
 .close-salary {
@@ -802,6 +814,7 @@ textarea::placeholder {
   font-size: 14px;
   color: #6b9191;
   font-weight: 500;
+  font-family: "Inter";
 }
 
 /* RANGE */
