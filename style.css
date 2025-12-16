@@ -1053,6 +1053,7 @@ textarea::placeholder {
   color: white;
   text-align: center;
   border-radius: 4px;
+  white-space: nowrap;
   font-weight: bold;
 }
 
