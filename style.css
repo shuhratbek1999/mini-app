@@ -1010,15 +1010,17 @@ textarea::placeholder {
   font-family: "Oddval";
 }
 .compBtn {
+  width: 100%;
   display: flex;
   /* align-items: center; */
   gap: 5px;
+  /* border: 1px solid red; */
 }
 .compBtn button {
   text-decoration: underline;
   font-family: "Oddval";
   height: 48px !important;
-  padding: 16px 24px !important;
+  padding: 16px 20px !important;
   white-space: nowrap;
   /* line-height: 48px !important; */
 }
