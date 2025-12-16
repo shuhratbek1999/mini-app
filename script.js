@@ -169,12 +169,12 @@ $(document).ready(function () {
 
   // location modal
 
-  function resetAllFilters() {
-    $(".filter_item").each(function () {
-      $(this).find(".pastga").addClass("active");
-      $(this).find(".yuqoriga").removeClass("active");
-    });
-  }
+  // function resetAllFilters() {
+  //   $(".filter_item").each(function () {
+  //     $(this).find(".pastga").addClass("active");
+  //     $(this).find(".yuqoriga").removeClass("active");
+  //   });
+  // }
   $(".filter_item")
     .first()
     .on("click", function () {
@@ -182,7 +182,7 @@ $(document).ready(function () {
       const yuqoriga = $(this).find(".yuqoriga");
       pastga.removeClass("active");
       yuqoriga.addClass("active");
-      resetAllFilters();
+      // resetAllFilters();
       $("#locationModal").show();
     });
   // Tag bosilganda
@@ -215,7 +215,7 @@ $(document).ready(function () {
 
     // modal yopiladi
     $("#locationModal").hide();
-    resetAllFilters();
+    // resetAllFilters();
   });
   $(document).on("click", ".keys_item img", function () {
     $(this).closest(".keys_item").remove();
@@ -230,7 +230,7 @@ $(document).ready(function () {
     const firstItem = $(".filter_item").first();
     firstItem.find(".pastga").addClass("active");
     firstItem.find(".yuqoriga").removeClass("active");
-    resetAllFilters();
+    // resetAllFilters();
   });
 
   const minSalary = 10000;
