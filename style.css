@@ -734,7 +734,7 @@ textarea::placeholder {
 }
 .pastga.active,
 .yuqoriga.active {
-  display: flex;
+  display: block;
 }
 
 /* TAGS */
