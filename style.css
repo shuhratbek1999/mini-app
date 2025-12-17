@@ -569,12 +569,17 @@ input::placeholder {
   margin: 10px 0px;
   position: relative;
 }
+label span {
+  font-weight: 600;
+  font-family: "Oddval";
+}
 .form .label_info {
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
   color: #3da88b;
   font-family: "Inter";
+  letter-spacing: -2%;
 }
 .borough_btn .btn {
   border-radius: 58px;
@@ -670,7 +675,7 @@ input::placeholder {
   font-weight: 500;
   font-family: "Inter";
   color: #6b9191;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 article {
   font-size: 14px;

@@ -13,7 +13,7 @@ $.fn.baseInput = function (options) {
     $(this).append(`
       <div class="form-group">
         <label>
-          ${settings.label}${settings.required ? " *" : ""}
+          ${settings.label}${settings.required ? " <span>*</span>" : ""}
         </label>
         <input 
           type="text" 
