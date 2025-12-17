@@ -707,7 +707,7 @@ article {
 .form_item {
   margin: 10px 0px;
 }
-.form_item label {
+.form_item span {
   margin-bottom: 10px;
   display: inline-block;
   font-family: "Inter";
