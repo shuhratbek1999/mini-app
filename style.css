@@ -121,7 +121,9 @@
   font-weight: 600;
   margin: 5px 0px;
 }
-
+button {
+  white-space: nowrap;
+}
 /* // second page  */
 .second {
   background-color: #e8eeee;
@@ -257,7 +259,10 @@
   background-repeat: no-repeat;
   z-index: 18;
 }
-
+/* #infoBtn button {
+  gap: 4px;
+  padding-top: -5px;
+} */
 .job_info {
   /* margin-top: 64px; */
   z-index: 20;
@@ -268,7 +273,7 @@
 .job_info h2 {
   font-size: 32px;
   font-weight: 600;
-  letter-spacing: 0.1px;
+  letter-spacing: -2px;
   font-family: "Oddval";
   line-height: 34px;
 }
@@ -279,7 +284,7 @@
   top: 20px;
   left: 10px;
   color: #292727;
-  font-family: "Oddvak";
+  font-family: "Oddval";
 }
 
 .find {
@@ -287,7 +292,7 @@
   max-height: 232px;
   border-radius: 16px;
   background-color: #e8eeee;
-  padding: 10px;
+  padding: 16px;
 }
 .find .input {
   position: relative;
@@ -362,6 +367,7 @@ textarea:focus {
   font-weight: 500;
   font-size: 18px;
   color: #6b9191;
+  opacity: 100;
   font-family: "Inter";
 }
 
@@ -509,7 +515,7 @@ textarea:focus {
 /* job detail  */
 
 .detail_title {
-  width: 73%;
+  width: 75%;
   font-size: 36px;
   font-weight: 600;
   font-style: italic;
@@ -517,7 +523,7 @@ textarea:focus {
   font-family: "Oddval";
   line-height: 100%;
   margin-bottom: 10px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .detail_info {
   color: #6b9191;
@@ -645,6 +651,7 @@ input::placeholder {
 }
 .job_main .content li {
   margin: 10px 0px;
+  font-family: "Inter";
 }
 .job_main .content > h1,
 .content li > h1 {
@@ -759,7 +766,7 @@ textarea::placeholder {
   transform: translateX(-50%);
   width: 100%;
   max-width: 480px;
-  background: #f3f7f7;
+  background: #e8eeee;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   padding: 16px;
@@ -786,6 +793,7 @@ textarea::placeholder {
   cursor: pointer;
   color: #6b9191;
   font-weight: 700;
+  margin-top: -8px;
 }
 
 /* SECTIONS */
@@ -803,6 +811,7 @@ textarea::placeholder {
 .pastga.active,
 .yuqoriga.active {
   display: block;
+  object-fit: contain;
 }
 
 /* TAGS */
@@ -847,7 +856,7 @@ textarea::placeholder {
   transform: translateX(-50%);
   width: 100%;
   max-width: 480px;
-  background: #f3f7f7;
+  background: #e8eeee;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   padding: 16px;
@@ -925,7 +934,7 @@ textarea::placeholder {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ffffff;
+  background: #6b9191;
   z-index: 1000;
   border-radius: 16px 16px 0 0;
   padding: 16px;
@@ -988,7 +997,7 @@ textarea::placeholder {
 /* Tag style */
 #categoryModal .tag {
   padding: 8px 14px;
-  border: 1px solid #ddd;
+  border: 1px solid #6b9191;
   border-radius: 20px;
   cursor: pointer;
   font-size: 14px;
