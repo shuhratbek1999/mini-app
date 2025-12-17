@@ -41,7 +41,7 @@ $(document).ready(function () {
     "Place a job",
     "#FFFF",
     "#3DA88B",
-    { href: "jobs.html", className: "finish_next-btn" },
+    { href: "jobsDetails.html", className: "finish_next-btn" },
     "155px"
   );
   $("#infoBtn").append(jobHero);
@@ -391,5 +391,63 @@ $(document).ready(function () {
   $("#companyInputComponent").baseInput({
     placeholder: "Specify the position and level",
     name: "company",
+  });
+
+  $("#backBtn").on("click", function () {
+    window.history.back();
+  });
+
+  $(".lists_work").on("click", ".yes, .no", function () {
+    $(this).siblings(".yes, .no").removeClass("active");
+
+    $(this).addClass("active");
+  });
+
+  // application need
+  $(".application_nedd").on("click", ".yes, .no", function () {
+    $(this).siblings(".yes, .no").removeClass("active");
+
+    $(this).addClass("active");
+  });
+
+  $(".health").on("click", ".yes, .no", function () {
+    $(this).siblings(".yes, .no").removeClass("active");
+
+    $(this).addClass("active");
+  });
+
+  $(".card").on("click", ".tub", function () {
+    $(this).siblings(".tub").removeClass("active");
+
+    $(this).addClass("active");
+  });
+
+  $("#questionForm").on("click", ".btn", function () {
+    $(this).siblings(".btn").removeClass("active");
+
+    $(this).addClass("active");
+  });
+
+  $(".space_role").on("click", ".btn", function () {
+    $(this).siblings(".btn").removeClass("active");
+
+    $(this).addClass("active");
+  });
+
+  $(".payment_method").on("click", ".btn", function () {
+    $(this).siblings(".btn").removeClass("active");
+
+    $(this).addClass("active");
+  });
+
+  $(".schedule").on("click", ".btn", function () {
+    $(this).siblings(".btn").removeClass("active");
+
+    $(this).addClass("active");
+  });
+  $(".benefits").on("click", ".btn", function () {
+    $(this).siblings(".btn").removeClass("active");
+
+    $(this).addClass("active");
   });
 });
