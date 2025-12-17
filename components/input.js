@@ -12,9 +12,9 @@ $.fn.baseInput = function (options) {
   return this.each(function () {
     $(this).append(`
       <div class="form-group">
-        <label>
+        <span>
           ${settings.label}${settings.required ? " <span>*</span>" : ""}
-        </label>
+        </span>
         <input 
           type="text" 
           name="${settings.name}" 

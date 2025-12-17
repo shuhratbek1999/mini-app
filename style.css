@@ -525,7 +525,7 @@ textarea:focus {
   font-family: "Oddval";
   line-height: 100%;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .detail_info {
   color: #6b9191;
@@ -551,7 +551,8 @@ textarea:focus {
   margin: 10px 0px 20px 0px;
   /* text-indent: 24px; */
 }
-.form-group label {
+.form-group span {
+  font-weight: 500;
   font-size: 14px;
   color: #6b9191;
   font-family: "Inter";
@@ -597,6 +598,12 @@ label span {
   border: none;
   color: white;
 }
+.application_nedd {
+  margin: 30px 0px;
+}
+.health {
+  margin: 40px 0px;
+}
 .application_nedd h1,
 .health h1 {
   font-size: 14px;
@@ -624,7 +631,13 @@ label span {
 }
 .indicate,
 .Weekend {
-  margin: 20px 0px;
+  margin: 30px 0px 15px 0px;
+}
+.payment_method {
+  margin: 30px 0px;
+}
+.employment_type {
+  margin: 40px 0px;
 }
 .role_title,
 .schedule_title {
@@ -640,9 +653,9 @@ label span {
   font-family: "Inter";
 }
 
-.schedule {
+/* .schedule {
   margin: 20px 0px;
-}
+} */
 
 .company_form,
 .job_form {
